@@ -15,7 +15,7 @@ Greetings(name)
 number=input("Введите число:")
 try:
     number=int(number)
-     print(square(number)) 
+    print(square(number)) 
 except ValueError:
     print("Это не число")
 x=input("Введите первое число")
