@@ -4,7 +4,7 @@ def is_prime(number):
             return False
         else:
             ++x
-        return True
+    return True
 number=input("Введите число")
 try:
     number=int(number)
