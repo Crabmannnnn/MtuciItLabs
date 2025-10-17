@@ -1,5 +1,5 @@
 def reading(readtype):
-    with open(r'D:\example.txt', 'r') as file:
+    with open(r'laba3/example.txt', 'r') as file:
         stroki = list(file)
     if readtype=="Строку":
         number=input("Какую строку вы хотите прочесть:")
@@ -44,7 +44,7 @@ def reading(readtype):
         except ValueError:
             print("Некоректный ввод")
     else:
-        with open(r'D:\example.txt', 'r') as file:
+        with open(r'laba3/example.txt', 'r') as file:
             print(file.read)
 r=input("По умолчанию файл читается целиком.\nЕсли вы хотите прочитать одну строку, напишите 'Строку'\n Если вы хотите прочитать несколько строк, напишите 'Строки'\n Если вы хотите прочитать от строки x, до строки y, напишите 'xy'\n ")
 reading(r)
