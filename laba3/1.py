@@ -44,7 +44,7 @@ def reading(readtype):
         except ValueError:
             print("Некоректный ввод")
     else:
-        with open(r'laba3/example.txt', 'r') as file:
-            print(file.read)
+        for x in range(0,len(stroki)):
+            print(stroki[x])
 r=input("По умолчанию файл читается целиком.\nЕсли вы хотите прочитать одну строку, напишите 'Строку'\n Если вы хотите прочитать несколько строк, напишите 'Строки'\n Если вы хотите прочитать от строки x, до строки y, напишите 'xy'\n ")
 reading(r)
