@@ -12,7 +12,6 @@ def reading(filename,MetodOfRead,line):
     else:
         return "Некоректный способ чтения"
 try:
-    line=int(1)
     filename=input("Введите название файла")
     readmetod=input("Если вы хотите прочитать файл целиком, введите 'ц', если вы хотите прочитать файл построчно, введите 'c'")
     if readmetod=="с":
@@ -21,6 +20,7 @@ try:
             line=int(line)
         except ValueError:
             print("Некоректное значение строки")
+            line=0
     for x in range(0,line):
         print(reading(filename,readmetod,x),end='')
 except FileNotFoundError:
