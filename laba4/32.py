@@ -1,3 +1,3 @@
-from packetLaba3 import sometext
+from packetLaba3 import module_sometext
 name=input("Введите ваше имя")
-print(sometext.greetings(name))
+print(module_sometext.greetings(name))
