@@ -16,7 +16,7 @@ class Car(Vehicle):
     def get_info(self):
         return(self.make,self.model,self.fuel_type)
 
-TestVehicle=Vehicle("Bycicle","223")
-print(TestVehicle.get_info())
-TestCar=Car("Camaz","0.39","Benzin")
-print(TestCar.get_info())
+testvehicle=Vehicle("Bycicle","223")
+print(testvehicle.get_info())
+testcar=Car("Camaz","0.39","Benzin")
+print(testcar.get_info())
