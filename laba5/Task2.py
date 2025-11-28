@@ -13,9 +13,9 @@ class Circle:
     def set_radius(self,newradius):
         self.radius=newradius
 
-ObjectCircle=Circle(10)
+objectcircle=Circle(10)
 print(ObjectCircle.get_radius())
-print(f"текущий радиус круга {ObjectCircle.get_radius()}")
+print(f"текущий радиус круга {objectcircle.get_radius()}")
 newradius=input("Введите новый радиус")
-ObjectCircle.set_radius(newradius)
-print(f"текущий радиус круга {ObjectCircle.get_radius()}")
+objectcircle.set_radius(newradius)
+print(f"текущий радиус круга {objectcircle.get_radius()}")
