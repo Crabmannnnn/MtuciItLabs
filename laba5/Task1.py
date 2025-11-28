@@ -10,4 +10,4 @@ class Book:
         return(f"Название книги: {self.title}, Автор: {self.author}, Год издания: {self.year}")
 
 candp=Book("CrimeAndPunishment","Dostoyevskiy",1866)
-print(CAndP.get_info())
+print(candp.get_info())
