@@ -9,5 +9,5 @@ class Book:
     def get_info(self):
         return(f"Название книги: {self.title}, Автор: {self.author}, Год издания: {self.year}")
 
-CAndP=Book("CrimeAndPunishment","Dostoyevskiy",1866)
+candp=Book("CrimeAndPunishment","Dostoyevskiy",1866)
 print(CAndP.get_info())
