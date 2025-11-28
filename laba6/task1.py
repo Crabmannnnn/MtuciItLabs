@@ -18,13 +18,13 @@ class UserAccount:
         else:
             return False
 
-TestAcc=UserAccount("Mike","Chtoto@yandex","42")
+testacc=UserAccount("Mike","Chtoto@yandex","42")
 password=input("Введите пароль")
-if TestAcc.check_password(password)==True:
+if testacc.check_password(password)==True:
     new_password=input("Введите новый пароль")
-    TestAcc.set_password(new_password)
+    testacc.set_password(new_password)
     password=input("Новый пароль установлен, попробуйте ввести новый пароль")
-    if TestAcc.check_password(password) == True:
+    if testacc.check_password(password) == True:
         print("Правильно")
     else:
         print("Неверный пароль")
