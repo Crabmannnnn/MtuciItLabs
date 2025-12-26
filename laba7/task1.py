@@ -34,10 +34,10 @@ class Technican(Employee):
     def get_info(self):
         return self.name,self.id,self.specialization
 class TechManager(Manager,Technican):
-    def __init__(self,name,id,speciialization,departament,employees,employeescount=0):
+    def __init__(self,name,id,speciialization,departament,employeescount=0):
         Manager.__init__(self,name,id,departament)
         Technican.__init__(self,name,id,speciialization)
-        self.employees=employees
+        self.employees=[]
         self.employeescount=employeescount
     def add_employee(self,employees):
         self.employees+=[employees]
@@ -57,7 +57,7 @@ woody=Technican("Tom",3,"Cowboy")
 print("Информация о сотруднике:",woody.get_info())
 woody.perform_maintenance()
 s=[]
-disney=TechManager("Disney",0,"The main department","Managment",s)
+disney=TechManager("Disney",0,"The main department","Managment")
 print(disney.get_info())
 disney.get_info
 disney.perform_maintenance()
