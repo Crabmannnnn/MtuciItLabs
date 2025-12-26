@@ -38,7 +38,7 @@ class TechManager(Manager,Technican):
         Manager.__init__(self,name,id,departament)
         Technican.__init__(self,name,id,speciialization)
         self.employees=employees
-        self.employeescount=eployeescount
+        self.employeescount=employeescount
     def add_employee(self,employees):
         self.employees+=[employees]
         self.employeescount+=1
