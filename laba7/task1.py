@@ -34,7 +34,7 @@ class Technican(Employee):
     def get_info(self):
         return self.name,self.id,self.specialization
 class TechManager(Manager,Technican):
-    def __init__(self,name,id,speciialization,departament,):
+    def __init__(self,name,id,speciialization,departament):
         Manager.__init__(self,name,id,departament)
         Technican.__init__(self,name,id,speciialization)
         self.employees=[]
