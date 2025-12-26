@@ -19,7 +19,7 @@ class Employee:
         return self.name,self.id
 class Manager(Employee):
     def __init__(self,name,id,departament):
-        super().__init__(name,id)
+        Employee.__init__(self,name,id)
         self.departament=departament
     def manage_project(self):
         print(f"Менеджер {self.name} управляет проектом")
@@ -27,7 +27,7 @@ class Manager(Employee):
         return self.name,self.id,self.departament
 class Technican(Employee):
     def __init__(self,name,id,speciialization):
-        super().__init__(name,id)
+        Employee.__init__(self,name,id)
         self.specialization=speciialization
     def perform_maintenance(self):
         print(f"Техник {self.name} обслуживает оборудование")
@@ -35,12 +35,10 @@ class Technican(Employee):
         return self.name,self.id,self.specialization
 class TechManager(Manager,Technican):
     def __init__(self,name,id,speciialization,departament,employees,employeescount=0):
-         self.name = name
-         self.id = id
-         self.departament = departament
-         self.specialization = speciialization
-         self.employees=employees
-         self.employeescount=int(employeescount)
+        Manager.__init__(self,name,id,departament)
+        Technican.__init__(self,name,id,speciialization)
+        self.employees=employees
+        self.employeescount=employeescount
     def add_employee(self,employees):
         self.employees+=[employees]
         self.employeescount+=1
