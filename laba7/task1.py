@@ -56,7 +56,6 @@ baz.manage_project()
 woody=Technican("Tom",3,"Cowboy")
 print("Информация о сотруднике:",woody.get_info())
 woody.perform_maintenance()
-s=[]
 disney=TechManager("Disney",0,"The main department","Managment")
 print(disney.get_info())
 disney.get_info
